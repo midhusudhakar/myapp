@@ -12,7 +12,7 @@ deploy:
   access_key_id: $AWS_ACCESS_ID
   secret_access_key: $AWS_SECRET_ID
   bucket: 'create-react-bucket'
-  local_dir: /build
+  local_dir: build
   skip_cleanup: true
   on:
     branch: master
