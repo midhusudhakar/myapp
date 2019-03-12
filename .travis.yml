@@ -1,6 +1,15 @@
 language: node_js
 node_js:
   - "11.10.1"
+notifications:
+  email:
+    on_success: change # only if status change from fail to success
+    on_failure: always # if there is a fail
+    recipients:
+      - midhun@zeefasys.com
+cache:
+  directories:
+    - node_modules
 install:
 - yarn global add travis-ci-cloudfront-invalidation
 - yarn
